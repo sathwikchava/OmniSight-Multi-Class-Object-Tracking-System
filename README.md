@@ -1,4 +1,4 @@
-# OmniSight: Multi-Class Object Tracking Model in Complex Environments
+# OmniSight: Multi-Class Object Tracking Model
 
 This project implements a versatile object tracking system using **YOLOv8**. While originally structured for autonomous driving contexts, the model supports the standard **COCO dataset**, meaning it can detect and track **81 different classes** of objects. It is a Large-Scale Multi-Class Object Tracking in Complex Environments.
 
