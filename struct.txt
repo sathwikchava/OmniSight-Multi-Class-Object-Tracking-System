@@ -1,0 +1,33 @@
+Object Tracking Model for Autonomous Driving/
+│
+├── datasets/                        # Dataset used for training
+│   ├── images/                      # Training/validation images
+│   └── labels/                      # YOLO-format annotation files
+│
+├── models/                          # Model files
+│   ├── yolov8n.pt                   # Original pre-trained YOLOv8 model
+│   └── fine_tuned_model.pt          # Fine-tuned custom model
+│
+├── outputs/                         # Output videos or results from tracking
+│   └── ...                          # Processed video with bounding boxes
+│
+├── runs/                            # YOLO training outputs
+│   └── detect/
+│       └── train/
+│           ├── weights/
+│           │   ├── best.pt          # Best model checkpoint
+│           │   └── last.pt          # Last model checkpoint
+│           ├── results.png          # Training curves (loss, mAP, etc.)
+│           ├── results.csv          # Per-epoch training results
+│           ├── args.yaml            # Training configuration
+│           └── train_batch0.jpg     # Visualization of predictions
+│
+├── scripts/                         # Python scripts for training/tracking
+│   ├── fine_tuning.py               # Fine-tuning script using YOLOv8
+│   └── track_objects.py             # Tracking script for running inference on video
+│
+├── videos/                          # Input videos for object detection/tracking
+│   └── test3.mp4                    # Example test video
+│
+├── data.yaml                        # YOLO dataset configuration file (paths, classes)
+└── fine_tuning.ipynb                # Jupyter Notebook for training/fine-tuning
